@@ -1,0 +1,36 @@
+$bg-color: #003E84;
+$yellow: #FFBC21;
+$gray: #F6F6F6;
+$mercury: #E1E1E1;
+$endeavour: #0055B5;
+$mustard: #FFCF4B;
+
+@mixin f400{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@mixin f500{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@mixin arvo400{
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+}
+
+@mixin arvo700{
+  font-family: 'Arvo', serif;
+  font-weight: 700;
+}
+
+@mixin promt300{
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
+}
+
+@mixin promt400{
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+}
