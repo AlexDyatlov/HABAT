@@ -14,6 +14,16 @@ $(function(){
 
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs-content--active');
-  }); 
+  });
+
+  $('.menu__btn').on('click', function(){
+    this.classList.toggle('active')
+    $('.header__wrapper').slideToggle();
+  });
+
+  $('.work__dropdown').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('work__dropdown--active');
+  });
 
 });

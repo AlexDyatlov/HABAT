@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 125px;
+    height: 125px;
   }
   &__descr{
     max-width: 115px;
@@ -129,6 +129,18 @@
     }
   }
 }
+.menu__btn{
+  display: none;
+}
+.header__wrapper{
+  max-width: 940px;
+  width: 100%;
+  &-visible{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 // end header
 
 // start services
@@ -143,6 +155,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  // padding: 280px 300px 0;
   padding: 0 300px;
   height: 100%;
   &-title{
@@ -174,7 +187,11 @@
     color: #000;
     font-size: 17px;
     line-height: 20px;
-    padding: 20px 65px 20px 30px;
+    max-width: 287px;
+    height: 60px;
+    padding-top: 19px;
+    padding-left: 25px;
+    width: 100%;
     position: relative;
     &::before{
       position: absolute;
@@ -197,10 +214,11 @@
   }
 }
 .service__info-second__btn{
-  padding: 20px 85px 20px 40px;
+  max-width: 343px;
+  padding-left: 40px;
 }
 .service__info-more{
-  padding: 20px 100px 20px 60px;
+  max-width: 235px;
 }
 .service__info-newtitle{
   max-width: 560px;
@@ -211,20 +229,20 @@
 }
 .slider-arrows{
   position: absolute;
-  bottom: 48px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: transparent;
+  bottom: 61px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   border: none;
   z-index: 5;
-  margin: 0;
   padding: 0;
   cursor: pointer;
   &-prev{
-    left: 44%;
+    right: 231px;
   }
   &-next{
-    left: 56%;
+    left: 231px;
   }
 }
 .slick-dots{
@@ -288,7 +306,7 @@
 .advantages{
   background: #F6F6F6;
   &__inner{
-    min-height: 123px;
+    padding: 37px 0 38px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -369,12 +387,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 22px;
   }
   &-title{
     @include arvo400;
+    font-size: 24px;
     line-height: 30px;
     max-width: 245px;
+  }
+  &-item:first-child{
+    margin-top: 22px;
   }
   &-link{
     line-height: 34px;
@@ -508,6 +529,5 @@
   }
 }
 // end footer
-
 
 @import 'media';
